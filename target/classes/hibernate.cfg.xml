@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>    
+<!DOCTYPE hibernate-configuration PUBLIC    
+        "-//Hibernate/Hibernate Configuration DTD 5.3//EN"    
+        "http://www.jboss.org/dtd/hibernate/hibernate-configuration-3.0.dtd">    
+<hibernate-configuration>    
+    <session-factory>    
+              
+   		<property name="connection.driver_class">org.postgresql.Driver</property>
+        <property name="connection.url">jdbc:postgresql://localhost:5432/khass</property>
+        <property name="connection.username">postgres</property>
+        <property name="connection.password">Finserv@2023</property>    
+      	
+      	
+      	<property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+      	<property name="hbm2ddl.auto">update</property>
+      	<property name="show_sql">true </property>
+      	<mapping class="com.bajaj.jdbc.spring_jdbc.Student" />
+         
+    </session-factory>    
+</hibernate-configuration>  
+
